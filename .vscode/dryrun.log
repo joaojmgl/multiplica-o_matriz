@@ -1,0 +1,12 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/joao/Documentos/linear_stack-main'
+mkdir -p ./build/
+mkdir -p ./build/objects
+mkdir -p build/objects/src
+g++ -Wall -Wextra -Werror -Iinclude/ -o build/objects/src/DFS.o -c src/DFS.cpp
+mkdir -p build/objects/src
+g++ -Wall -Wextra -Werror -Iinclude/ -o build/objects/src/main.o -c src/main.cpp
+mkdir -p build/
+g++ -Wall -Wextra -Werror -Iinclude/ -lstdc++ -lm -o ./build//app ./build/objects/src/DFS.o ./build/objects/src/main.o
+make: Leaving directory '/home/joao/Documentos/linear_stack-main'
+ 
