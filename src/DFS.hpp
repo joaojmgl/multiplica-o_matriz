@@ -8,14 +8,17 @@
 #include <iostream>
 using namespace std;
 
-#define MAXTAM 10
+#define MAXTAM 100
+
 
 typedef struct Item{
 	int val;
+	string vaux;
 }Item;
 
 typedef struct Pilha{
 	Item vet[MAXTAM];
+    Item naux;
 	int top;
 	int base;
 }Pilha;
@@ -25,7 +28,10 @@ void PUSH(Pilha *p, Item d);
 void POP(Pilha *p, Item *d);
 void PRemove(Pilha *p, Item d);
 void PImprime(Pilha *p);
-void Matriz_arq();
+void Matriz_arq(Pilha *p, Item m);
+void Anda_labirinto(Pilha *p /*Item d*/);
+
+
 #endif
 
 

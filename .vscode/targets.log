@@ -6,7 +6,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Wed May 18 11:25:10 2022
+# Make data base, printed on Wed May 18 22:17:08 2022
 
 # Variables
 
@@ -49,11 +49,11 @@ CURDIR := /home/joao/Documentos/linear_stack-main
 # makefile
 SHELL = /bin/sh
 # environment
-SNAP_DATA = /var/snap/code/96
+SNAP_DATA = /var/snap/code/97
 # environment
-VSCODE_NLS_CONFIG = {"locale":"pt-br","availableLanguages":{"*":"pt-br"},"_languagePackId":"74ce6549a467d1dfaba55fb5394742c9.pt-br","_translationsConfigFile":"/home/joao/.config/Code/clp/74ce6549a467d1dfaba55fb5394742c9.pt-br/tcf.json","_cacheRoot":"/home/joao/.config/Code/clp/74ce6549a467d1dfaba55fb5394742c9.pt-br","_resolvedLanguagePackCoreLocation":"/home/joao/.config/Code/clp/74ce6549a467d1dfaba55fb5394742c9.pt-br/da15b6fd3ef856477bf6f4fb29ba1b7af717770d","_corruptedFile":"/home/joao/.config/Code/clp/74ce6549a467d1dfaba55fb5394742c9.pt-br/corrupted.info","_languagePackSupport":true}
+VSCODE_NLS_CONFIG = {"locale":"pt-br","availableLanguages":{"*":"pt-br"},"_languagePackId":"74ce6549a467d1dfaba55fb5394742c9.pt-br","_translationsConfigFile":"/home/joao/.config/Code/clp/74ce6549a467d1dfaba55fb5394742c9.pt-br/tcf.json","_cacheRoot":"/home/joao/.config/Code/clp/74ce6549a467d1dfaba55fb5394742c9.pt-br","_resolvedLanguagePackCoreLocation":"/home/joao/.config/Code/clp/74ce6549a467d1dfaba55fb5394742c9.pt-br/c3511e6c69bb39013c4a4b7b9566ec1ca73fc4d5","_corruptedFile":"/home/joao/.config/Code/clp/74ce6549a467d1dfaba55fb5394742c9.pt-br/corrupted.info","_languagePackSupport":true}
 # environment
-JOURNAL_STREAM = 8:48206
+JOURNAL_STREAM = 8:45406
 # environment
 XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
 # environment
@@ -79,15 +79,15 @@ DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-_ = /snap/code/96/usr/share/code/code
+_ = /snap/code/97/usr/share/code/code
 # environment
-MANAGERPID = 1445
+MANAGERPID = 1453
 # environment
 LESSOPEN = | /usr/bin/lesspipe %s
 # environment
 VSCODE_CWD = /home/joao
 # environment
-GSETTINGS_SCHEMA_DIR = /snap/code/96/usr/share/glib-2.0/schemas
+GSETTINGS_SCHEMA_DIR = /snap/code/97/usr/share/glib-2.0/schemas
 # default
 MAKE_HOST := x86_64-pc-linux-gnu
 # environment
@@ -95,15 +95,15 @@ PATH = /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/
 # environment
 GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
 # environment
-SESSION_MANAGER = local/Joao-Lisboa-Note:@/tmp/.ICE-unix/1660,unix/Joao-Lisboa-Note:/tmp/.ICE-unix/1660
+SESSION_MANAGER = local/Joao-Lisboa-Note:@/tmp/.ICE-unix/1670,unix/Joao-Lisboa-Note:/tmp/.ICE-unix/1670
 # environment
 XDG_RUNTIME_DIR = /run/user/1000
 # environment
 GDK_PIXBUF_MODULE_FILE = /home/joao/snap/code/common/.cache/gdk-pixbuf-loaders.cache
 # environment
-SNAP = /snap/code/96
+SNAP = /snap/code/97
 # environment
-SNAP_VERSION = da15b6fd
+SNAP_VERSION = c3511e6c
 # environment
 XDG_MENU_PREFIX = gnome-
 # environment
@@ -113,11 +113,11 @@ DISABLE_WAYLAND = 1
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
-INVOCATION_ID = 5f1773add8784725a3b7a89b1492641f
+INVOCATION_ID = 063184da48114b39ad39f926d61ba627
 # makefile (from 'Makefile', line 3)
 LDFLAGS := -lstdc++ -lm
 # environment
-GDK_PIXBUF_MODULEDIR = /snap/code/96/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders
+GDK_PIXBUF_MODULEDIR = /snap/code/97/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
@@ -127,7 +127,7 @@ XDG_SESSION_DESKTOP = ubuntu
 # environment
 SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 19199
+GIO_LAUNCHED_DESKTOP_FILE_PID = 9419
 # automatic
 %F = $(notdir $%)
 # environment
@@ -141,7 +141,7 @@ PWD = /home/joao/Documentos/linear_stack-main
 # default
 .LOADED := 
 # environment
-SSH_AGENT_PID = 1622
+SSH_AGENT_PID = 1632
 # environment
 ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
 # environment
@@ -155,7 +155,7 @@ LESSCLOSE = /usr/bin/lesspipe %s %s
 # environment
 VSCODE_CLI = 1
 # environment
-VSCODE_CODE_CACHE_PATH = /home/joao/.config/Code/CachedData/da15b6fd3ef856477bf6f4fb29ba1b7af717770d
+VSCODE_CODE_CACHE_PATH = /home/joao/.config/Code/CachedData/c3511e6c69bb39013c4a4b7b9566ec1ca73fc4d5
 # environment
 LOGNAME = joao
 # environment
@@ -185,19 +185,19 @@ MAKECMDGOALS := all
 # environment
 QT_IM_MODULE = ibus
 # environment
-SNAP_USER_DATA = /home/joao/snap/code/96
+SNAP_USER_DATA = /home/joao/snap/code/97
 # environment
 SHLVL = 0
 # environment
 GNOME_SHELL_SESSION_MODE = ubuntu
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-a9f893ca-9983-4166-821a-ad772966764b.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-628b1a99-81d6-428a-a332-b2d32555ea9b.sock
 # default
 MAKE_VERSION := 4.2.1
 # environment
 USER = joao
 # environment
-SNAP_REVISION = 96
+SNAP_REVISION = 97
 # makefile
 .DEFAULT_GOAL := all
 # makefile (from 'Makefile', line 8)
@@ -215,7 +215,7 @@ MAKE_COMMAND := make
 # environment
 LANGUAGE = pt_BR:pt:en
 # environment
-VSCODE_IPC_HOOK = /run/user/1000/vscode-a2d5acab-1.67.1-main.sock
+VSCODE_IPC_HOOK = /run/user/1000/vscode-a2d5acab-1.67.2-main.sock
 # environment
 BAMF_DESKTOP_FILE_HINT = /var/lib/snapd/desktop/applications/code_code.desktop
 # makefile
@@ -269,7 +269,7 @@ OBJECTS := ./build/objects/src/DFS.o ./build/objects/src/main.o
 # environment
 LANG = C
 # environment
-VSCODE_PID = 19250
+VSCODE_PID = 9474
 # makefile (from 'Makefile', line 6)
 APP_DIR := ./build/
 # variable set hash-table stats:
@@ -277,15 +277,15 @@ APP_DIR := ./build/
 
 # Pattern-specific Variable Values
 
- 
 # No pattern-specific variable values.
 
 # Directories
 
-# . (device 66309, inode 1444379): 10 files, no impossibilities.
+# . (device 66309, inode 1444379): 11 files, no impossibilities.
+ 
 # src (device 66309, inode 1444385): 5 files, no impossibilities.
 
-# 15 files, no impossibilities in 2 directories.
+# 16 files, no impossibilities in 2 directories.
 
 # Implicit Rules
 
@@ -426,12 +426,12 @@ build/objects/src/main.o:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 28 / storage = 265 B / avg = 9 B
-# current buf: size = 8162 B / used = 265 B / count = 28 / avg = 9 B
+# strcache buffers: 1 (0) / strings = 29 / storage = 270 B / avg = 9 B
+# current buf: size = 8162 B / used = 270 B / count = 29 / avg = 9 B
 
-# strcache performance: lookups = 58 / hit rate = 51%
+# strcache performance: lookups = 59 / hit rate = 50%
 # hash-table stats:
-# Load=28/8192=0%, Rehash=0, Collisions=2/58=3%
-# Finished Make data base on Wed May 18 11:25:10 2022
+# Load=29/8192=0%, Rehash=0, Collisions=2/59=3%
+# Finished Make data base on Wed May 18 22:17:08 2022
 
  

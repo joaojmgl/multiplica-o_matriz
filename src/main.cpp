@@ -1,16 +1,10 @@
 #include "DFS.hpp"
-#include <fstream>
-#include <stdio.h>
-#include <stdlib.h>
-#include <stdbool.h>
-#include <string>
-#include <iostream>
-using namespace std;
-
+Pilha p;
+Item d;
 int main()
 {
-Matriz_arq();
-   
+Matriz_arq(&p, d);
+  Anda_labirinto(&p /*d*/) ;
    
 	
 
