@@ -13,6 +13,8 @@ using namespace std;
 
 typedef struct Item{
 	int val;
+	int vall;
+	int valc;
 	string vaux;
 }Item;
 
@@ -28,8 +30,8 @@ void PUSH(Pilha *p, Item d);
 void POP(Pilha *p, Item *d);
 void PRemove(Pilha *p, Item d);
 void PImprime(Pilha *p);
-void Matriz_arq(Pilha *p, Item m);
-void Anda_labirinto(Pilha *p /*Item d*/);
+void Matriz_arq( Item m);
+void Anda_labirinto(Pilha *p, Item d);
 
 
 #endif

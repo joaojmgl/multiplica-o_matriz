@@ -1,5 +1,6 @@
 #include "DFS.hpp"
 int n;
+string vetaux[MAXTAM];
 // string Matriz[n][n];
 
 void FPVazia(Pilha *p){
@@ -50,11 +51,11 @@ void PRemove(Pilha *p, Item d){
 
 void PImprime(Pilha *p){
 	for(int i=p->top-1; i>=p->base; i--)
-		printf("%d\n", p->vet[i].val);
+		printf("%d\n", p->vet[i].vall);
 	printf("\n");
 	
 }
-void Matriz_arq(Pilha *p , Item d){
+void Matriz_arq( Item d){
 	FILE *arq_m;
 	ifstream arq;
 	string m;
@@ -63,41 +64,85 @@ void Matriz_arq(Pilha *p , Item d){
 		getline(arq, m);
 		n = stoi(m);
 	}
+	int Total;
+	Total=n*n;
 	arq.close();
 	arq_m = fopen("Matriz_DFS.txt","r");
-	for ( int l = 0; l < MAXTAM ; l++){
+	for ( int l = 0; l < Total ; ){
 		d.vaux = fgetc(arq_m);
 		m=d.vaux;
 		if(m == "1"|| m == "0"){
-			p->vet[l] = d;
-			// cout<<p->vet[l].vaux<<endl;
-								
+
+			 vetaux[l] = m;
+			//  cout<<vetaux[n]<<endl;
+								l++;
 								
 		}
 	}
 }
 
 
-void Anda_labirinto(Pilha *p /*Item d*/){
-  string Matriz[n][n];
-  int aux=0;
-  for (int l = 0; l < n; l++)
-  {  for (int c = 0; c < n; c++)
-  {  p->vet[aux].vaux=Matriz[l][c];
-	 aux++;
-	 cout<<Matriz[l][c]<<endl;
+void Anda_labirinto(Pilha *p, Item d){	
+string Matriz[n][n];
+int aux=0;
+int l;
+int c;
 
-  }
-  
+// int x;
+for ( l = 0; l < n; l++){
+  	for ( c = 0; c < n; c++){ 
+		Matriz[l][c]=vetaux[aux];
+     	aux++;
+		 cout<<Matriz[l][c]<<" ";
+  	}
+	  cout<<endl;
+}
+l=0;
+c=0;	 
+// int Coluna=0;
+// int Linha=0;
+d.valc=c;
+PUSH(p,d);
+d.vall=l;
+PUSH(p,d);
+Matriz[l][c]="X";
+while (c!=(n-1)|| l!=(n-1)){
+	if (Matriz[l+1][c]=="0"||Matriz[l+1][c]!=Matriz[n-1][c]){
+		while (Matriz[l+1][c]=="0"){
+			cout << "ATUAL POSIÇÃO: [" << l << "] [" << c << "]" << endl;
+			l++; 
+			d.vall=l;
+			PUSH(p,d);
+			Matriz[l][c]="X";
+		}
+	}
+
+	cout << endl;
+	if(Matriz[l][c+1]=="0"||Matriz[l+1][c]!=Matriz[n][c-1]){
+		while (Matriz[l][c+1]=="0"){
+			cout << "ATUAL POSIÇÃO: [" << l << "] [" << c << "]" << endl;
+			c++;
+			d.valc=c;
+			PUSH(p,d);
+			Matriz[l][c]="X";
+
+		}
+	}
 	
-  }
-  
 
+	
+}
+cout<<c<<endl;
+cout<<l<<endl;
+ 
+ for ( l = 0; l < n; l++){
+  	for ( c = 0; c < n; c++){ 
+		 cout<<Matriz[l][c]<<" ";
+  	}
+	  cout<<endl;
+}
+//  PImprime(p);
 
-	/* fazer metodo da bolha incrementndo a matriz;
-percorrer a matriz utilizando os id de baixo/direita/cima/esquerda;
-sempre que nao char para onde ir dar um pop e deixar a posição anterior(posição do ultimo push valendo 1;
-*/
 }
 
 
