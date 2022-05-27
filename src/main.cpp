@@ -1,11 +1,11 @@
 #include "DFS.hpp"
 Pilha p;
-Item d;
+Item_1 d;
 int main()
 {
 FPVazia(&p);
 Matriz_arq(d);
-Anda_labirinto(&p,d);
+Anda_labirinto();
    
 	
 

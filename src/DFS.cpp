@@ -4,58 +4,44 @@ string vetaux[MAXTAM];
 // string Matriz[n][n];
 
 void FPVazia(Pilha *p){
-	p->top   = 0;
-	p->base  = 0;
+	p->base = (Block*) malloc (sizeof(Block));
+	p->top  = p->base;
+	p->base->prox = NULL;
 }
 
-
-void PUSH(Pilha *p, Item d){
-	if (p->top >= MAXTAM){
-		printf("PILHA CHEIA!\n");
-	}else{
-		p->vet[p->top] = d;
-		p->top ++;
-	}
+void Push(Pilha *p, Item d){
+	Block *aux = (Block*) malloc (sizeof(Block));
+	aux->data = d;
+	aux->prox = p->top;
+	p->top = aux;
 }
 
-void POP(Pilha *p, Item *d){
-	if(p->base == p->top)
+void Pop(Pilha *p, Item *d){
+	Block *aux;
+
+	if(p->base == p->top || p == NULL){
 		printf("PILHA VAZIA!\n");
-	else{
-		p->top --;
-		*d = p->vet[p->top];
+		return;
 	}
+	
+	aux = p->top;
+	p->top = aux->prox;
+	*d = aux->data;
+	free(aux);
 }
 
-void PRemove(Pilha *p, Item d){
-	Pilha aux;
-	Item rem;
-
-	FPVazia(&aux);
-
-	if(p->base == p->top)
-		printf("PILHA VAZIA!\n");
-	else{
-		while(p->top > p->base){
-			POP(p, &rem);
-			if(rem.val != d.val)
-				PUSH(&aux, rem);
-		}
-
-		while(aux.top > aux.base){
-			POP(&aux, &rem);
-			PUSH(p, rem);
-		}
-	}
-}
 
 void PImprime(Pilha *p){
-	for(int i=p->top-1; i>=p->base; i--)
-		printf("%d\n", p->vet[i].vall);
-	printf("\n");
-	
+	Block *aux;
+
+	aux = p->top;
+	while(aux != p->base){
+		printf("%d\n", aux->data.val);
+		aux = aux->prox;
+	}
+
 }
-void Matriz_arq( Item d){
+void Matriz_arq( Item_1 d){
 	FILE *arq_m;
 	ifstream arq;
 	string m;
@@ -82,58 +68,95 @@ void Matriz_arq( Item d){
 }
 
 
-void Anda_labirinto(Pilha *p, Item d){	
+void Anda_labirinto(){
+Pilha column,lines;
+Item co,li;	
 string Matriz[n][n];
-int aux=0;
-int l;
-int c;
-
-// int x;
+bool Limite=false;
+int aux=0,l,c,Coluna=0,Linha=0;
 for ( l = 0; l < n; l++){
   	for ( c = 0; c < n; c++){ 
 		Matriz[l][c]=vetaux[aux];
      	aux++;
-		 cout<<Matriz[l][c]<<" ";
-  	}
+		cout<<Matriz[l][c]<<" ";
+  	} 
 	  cout<<endl;
 }
-l=0;
-c=0;	 
-// int Coluna=0;
-// int Linha=0;
-d.valc=c;
-PUSH(p,d);
-d.vall=l;
-PUSH(p,d);
-Matriz[l][c]="X";
-while (c!=(n-1)|| l!=(n-1)){
-	if (Matriz[l+1][c]=="0"||Matriz[l+1][c]!=Matriz[n-1][c]){
-		while (Matriz[l+1][c]=="0"){
-			cout << "ATUAL POSIÇÃO: [" << l << "] [" << c << "]" << endl;
-			l++; 
-			d.vall=l;
-			PUSH(p,d);
-			Matriz[l][c]="X";
-		}
-	}
 
-	cout << endl;
-	if(Matriz[l][c+1]=="0"||Matriz[l+1][c]!=Matriz[n][c-1]){
-		while (Matriz[l][c+1]=="0"){
-			cout << "ATUAL POSIÇÃO: [" << l << "] [" << c << "]" << endl;
-			c++;
-			d.valc=c;
-			PUSH(p,d);
-			Matriz[l][c]="X";
-
-		}
-	}
+FPVazia(&column);
+FPVazia(&lines);
+l=0;c=0;	 
+li.val= l;
+co.val= c;
+Push(&lines,li );
+Push(&column, co );
+Matriz[l][c]="I";
+while (Limite==false){
 	
 
 	
+		
+			if(l<(n-1)&&Matriz[l+1][c]=="0"){
+				 while (l!=(n-1)&&Matriz[l+1][c]=="0"){
+					
+					    l++; 
+						li.val=l;
+						Push(&lines, li);
+						Matriz[l][c]="v"; 	
+						Linha++;
+						cout<<"baixo"<<endl;
+						cout<<c<<endl;
+						cout<<l<<endl;			
+					
+					
+				}		
+			}
+				else if(c<(n-1)&&Matriz[l][c+1]=="0"){
+					while (c!=(n-1)&&Matriz[l][c+1]=="0"){
+					
+					c++;
+					co.val = c;
+					Push(&column,co);
+					Matriz[l][c]=">";
+					Coluna++;
+					cout<<"direita"<<endl;
+					
+				
+			}	
+		}
+	
+	
+			
+				else if(Coluna!=0&&c>0){
+					    cout<<"POP Coluna"<<endl;
+						Matriz[l][c]="P";
+						co.val = c;
+						Pop(&column,&co);
+						Coluna--;
+						c--;
+								
+					
+					
+				}
+		
+	
+		
+			else if(Linha!=0&&l>0){
+				    cout<<"POP Linha"<<endl;
+					Matriz[l][c]="P";
+					li.val = l;
+					Pop(&lines,&li);
+					Linha--;
+					l--;
+					
+					
+				
+			} 
+
+			 if((n-1)*(n-1)==l*c){
+						Limite=true;
+			}
 }
-cout<<c<<endl;
-cout<<l<<endl;
  
  for ( l = 0; l < n; l++){
   	for ( c = 0; c < n; c++){ 
@@ -141,7 +164,7 @@ cout<<l<<endl;
   	}
 	  cout<<endl;
 }
-//  PImprime(p);
+
 
 }
 
