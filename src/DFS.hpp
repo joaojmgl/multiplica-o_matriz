@@ -50,8 +50,3 @@ void Anda_labirinto();
 #endif
 
 
-// arroz integral 
-// macarrao 
-// alface tomate 
-// contra file 
-// fritas

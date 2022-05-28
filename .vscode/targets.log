@@ -6,7 +6,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Thu May 26 17:47:10 2022
+# Make data base, printed on Sat May 28 17:29:06 2022
 
 # Variables
 
@@ -53,7 +53,7 @@ SNAP_DATA = /var/snap/code/97
 # environment
 VSCODE_NLS_CONFIG = {"locale":"pt-br","availableLanguages":{"*":"pt-br"},"_languagePackId":"74ce6549a467d1dfaba55fb5394742c9.pt-br","_translationsConfigFile":"/home/joao/.config/Code/clp/74ce6549a467d1dfaba55fb5394742c9.pt-br/tcf.json","_cacheRoot":"/home/joao/.config/Code/clp/74ce6549a467d1dfaba55fb5394742c9.pt-br","_resolvedLanguagePackCoreLocation":"/home/joao/.config/Code/clp/74ce6549a467d1dfaba55fb5394742c9.pt-br/c3511e6c69bb39013c4a4b7b9566ec1ca73fc4d5","_corruptedFile":"/home/joao/.config/Code/clp/74ce6549a467d1dfaba55fb5394742c9.pt-br/corrupted.info","_languagePackSupport":true}
 # environment
-JOURNAL_STREAM = 8:47018
+JOURNAL_STREAM = 8:46632
 # environment
 XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
 # environment
@@ -81,7 +81,7 @@ VSCODE_VERBOSE_LOGGING = true
 # environment
 _ = /snap/code/97/usr/share/code/code
 # environment
-MANAGERPID = 1412
+MANAGERPID = 1440
 # environment
 LESSOPEN = | /usr/bin/lesspipe %s
 # environment
@@ -95,7 +95,7 @@ PATH = /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/
 # environment
 GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
 # environment
-SESSION_MANAGER = local/Joao-Lisboa-Note:@/tmp/.ICE-unix/1629,unix/Joao-Lisboa-Note:/tmp/.ICE-unix/1629
+SESSION_MANAGER = local/Joao-Lisboa-Note:@/tmp/.ICE-unix/1658,unix/Joao-Lisboa-Note:/tmp/.ICE-unix/1658
 # environment
 XDG_RUNTIME_DIR = /run/user/1000
 # environment
@@ -113,7 +113,7 @@ DISABLE_WAYLAND = 1
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
-INVOCATION_ID = f338164abc244c9b97e874cecdb19448
+INVOCATION_ID = 5dcdb3dc79444332bcafe4110146d530
 # makefile (from 'Makefile', line 3)
 LDFLAGS := -lstdc++ -lm
 # environment
@@ -127,7 +127,7 @@ XDG_SESSION_DESKTOP = ubuntu
 # environment
 SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 2841
+GIO_LAUNCHED_DESKTOP_FILE_PID = 5033
 # automatic
 %F = $(notdir $%)
 # environment
@@ -141,7 +141,7 @@ PWD = /home/joao/Documentos/linear_stack-main
 # default
 .LOADED := 
 # environment
-SSH_AGENT_PID = 1591
+SSH_AGENT_PID = 1619
 # environment
 ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
 # environment
@@ -191,13 +191,14 @@ SHLVL = 0
 # environment
 GNOME_SHELL_SESSION_MODE = ubuntu
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-99c6fd2b-0a9e-4efe-8422-f79737ee5bb7.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-02f14e4d-97e0-4776-a629-8568c73f46c5.sock
 # default
 MAKE_VERSION := 4.2.1
 # environment
 USER = joao
 # environment
 SNAP_REVISION = 97
+ 
 # makefile
 .DEFAULT_GOAL := all
 # makefile (from 'Makefile', line 8)
@@ -269,7 +270,7 @@ OBJECTS := ./build/objects/src/DFS.o ./build/objects/src/main.o
 # environment
 LANG = C
 # environment
-VSCODE_PID = 2897
+VSCODE_PID = 5085
 # makefile (from 'Makefile', line 6)
 APP_DIR := ./build/
 # variable set hash-table stats:
@@ -293,7 +294,6 @@ build/objects/%.o: %.cpp
 	@mkdir -p $(@D)
 	$(CXX) $(CXXFLAGS) $(INCLUDE) -o $@ -c $<
 
- 
 # 1 implicit rules, 0 (0.0%) terminal.
 
 # Files
@@ -432,6 +432,6 @@ build/objects/src/main.o:
 # strcache performance: lookups = 59 / hit rate = 50%
 # hash-table stats:
 # Load=29/8192=0%, Rehash=0, Collisions=2/59=3%
-# Finished Make data base on Thu May 26 17:47:10 2022
+# Finished Make data base on Sat May 28 17:29:06 2022
 
  
