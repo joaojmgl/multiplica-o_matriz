@@ -108,9 +108,9 @@
 					Coluna++;	
 			}	
 		}
-      ```
-      - Repare que por onde a acontece o **PUSH** atribuimos os valore de `V` para baixo e `>` para direita.
-    - Os outros dois **if's** foram feitos para andar para cima e para esquerda dando um **POP** na posiçao atual da matriz:
+```
+  - Repare que por onde a acontece o **PUSH** atribuimos os valore de `V` para baixo e `>` para direita.
+  - Os outros dois **if's** foram feitos para andar para cima e para esquerda dando um **POP** na posiçao atual da matriz:
 ```c++
 				else if(Coluna!=0&&c>0){
 						cout<<"POP"<<" "<<"nas posições :"<<endl;
