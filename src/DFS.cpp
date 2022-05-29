@@ -71,7 +71,7 @@ Pilha column,lines;
 Item co,li;	
 string Matriz[n][n];
 bool Limite=false;
-int aux=0,l,c,Coluna=0,Linha=0;
+int aux=0,l,c,Coluna=0,Linha=0,Interactions=0;
 cout<<"Matriz escolhida para ser percorrida:"<<endl;
 
 for ( l = 0; l < n; l++){
@@ -92,49 +92,56 @@ li.val= l;
 co.val= c;
 Push(&lines,li );
 Push(&column, co );
+cout<<"PUSH"<<" "<<"nas posições :"<<endl;
+cout<<"Linha: "<<l<<endl;
+cout<<"Coluna: "<<c<<endl;
 Matriz[l][c]="I";
 while (Limite==false){
 			if(l<(n-1)&&Matriz[l+1][c]=="0"){
 				 while (l!=(n-1)&&Matriz[l+1][c]=="0"){
 						cout<<"PUSH"<<" "<<"nas posições :"<<endl;
-						cout<<"Linha: "<<l<<endl;
-						cout<<"Coluna: "<<c<<endl;
 					    l++; 
 						li.val=l;
 						Push(&lines, li);
 						Matriz[l][c]="v"; 	
-						Linha++;					
+						Linha++;	
+						Interactions++;	
+						cout<<"Linha: "<<l<<endl;
+						cout<<"Coluna: "<<c<<endl;			
 				}		
 			}
 				else if(c<(n-1)&&Matriz[l][c+1]=="0"){
 					while (c!=(n-1)&&Matriz[l][c+1]=="0"){
 					cout<<"PUSH"<<" "<<"nas posições :"<<endl;
-					cout<<"Linha: "<<l<<endl;
-					cout<<"Coluna: "<<c<<endl;
 					c++;
 					co.val = c;
 					Push(&column,co);
 					Matriz[l][c]=">";
 					Coluna++;
+					Interactions++;
+					cout<<"Linha: "<<l<<endl;
+					cout<<"Coluna: "<<c<<endl;
 			}	
 		}
 				else if(Coluna!=0&&c>0){
 						cout<<"POP"<<" "<<"nas posições :"<<endl;
-						cout<<"Linha: "<<l<<endl;
-						cout<<"Coluna: "<<c<<endl;
 						Matriz[l][c]="<";
 						Pop(&column,&co);
 						Coluna--;
 						c=co.val; 	
+						Interactions++;
+						cout<<"Linha: "<<l<<endl;
+						cout<<"Coluna: "<<c<<endl;
 				}
 			else if(Linha!=0&&l>0){
 					cout<<"POP"<<" "<<"nas posições :"<<endl;
-					cout<<"Linha: "<<l<<endl;
-					cout<<"Coluna: "<<c<<endl;
 					Matriz[l][c]="A";
 					Pop(&lines,&li);
 					l=li.val;
 					Linha--;	
+					Interactions++;
+					cout<<"Linha: "<<l<<endl;
+					cout<<"Coluna: "<<c<<endl;
 			} else{
 				cout<<"Impossivel chegar no final da matriz"<<endl;
 				Limite=true;
@@ -155,6 +162,7 @@ cout<<endl;
   	}
 	  cout<<endl;
 }
+cout<<"O numero de interaçoes foi de: "<<Interactions<<endl;
 cout<<endl;
 cout<<"PUSH(para baixo)"<<" = "<<"V"<<endl;
 cout<<endl;

@@ -6,7 +6,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Sat May 28 17:29:06 2022
+# Make data base, printed on Sun May 29 19:07:07 2022
 
 # Variables
 
@@ -53,7 +53,7 @@ SNAP_DATA = /var/snap/code/97
 # environment
 VSCODE_NLS_CONFIG = {"locale":"pt-br","availableLanguages":{"*":"pt-br"},"_languagePackId":"74ce6549a467d1dfaba55fb5394742c9.pt-br","_translationsConfigFile":"/home/joao/.config/Code/clp/74ce6549a467d1dfaba55fb5394742c9.pt-br/tcf.json","_cacheRoot":"/home/joao/.config/Code/clp/74ce6549a467d1dfaba55fb5394742c9.pt-br","_resolvedLanguagePackCoreLocation":"/home/joao/.config/Code/clp/74ce6549a467d1dfaba55fb5394742c9.pt-br/c3511e6c69bb39013c4a4b7b9566ec1ca73fc4d5","_corruptedFile":"/home/joao/.config/Code/clp/74ce6549a467d1dfaba55fb5394742c9.pt-br/corrupted.info","_languagePackSupport":true}
 # environment
-JOURNAL_STREAM = 8:46632
+JOURNAL_STREAM = 8:46730
 # environment
 XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
 # environment
@@ -81,7 +81,7 @@ VSCODE_VERBOSE_LOGGING = true
 # environment
 _ = /snap/code/97/usr/share/code/code
 # environment
-MANAGERPID = 1440
+MANAGERPID = 1482
 # environment
 LESSOPEN = | /usr/bin/lesspipe %s
 # environment
@@ -95,7 +95,7 @@ PATH = /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/
 # environment
 GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
 # environment
-SESSION_MANAGER = local/Joao-Lisboa-Note:@/tmp/.ICE-unix/1658,unix/Joao-Lisboa-Note:/tmp/.ICE-unix/1658
+SESSION_MANAGER = local/Joao-Lisboa-Note:@/tmp/.ICE-unix/1701,unix/Joao-Lisboa-Note:/tmp/.ICE-unix/1701
 # environment
 XDG_RUNTIME_DIR = /run/user/1000
 # environment
@@ -113,7 +113,7 @@ DISABLE_WAYLAND = 1
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
-INVOCATION_ID = 5dcdb3dc79444332bcafe4110146d530
+INVOCATION_ID = 05fec71d11724ddb9a86dae66b2d12e8
 # makefile (from 'Makefile', line 3)
 LDFLAGS := -lstdc++ -lm
 # environment
@@ -127,7 +127,7 @@ XDG_SESSION_DESKTOP = ubuntu
 # environment
 SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 5033
+GIO_LAUNCHED_DESKTOP_FILE_PID = 2313
 # automatic
 %F = $(notdir $%)
 # environment
@@ -141,7 +141,7 @@ PWD = /home/joao/Documentos/linear_stack-main
 # default
 .LOADED := 
 # environment
-SSH_AGENT_PID = 1619
+SSH_AGENT_PID = 1662
 # environment
 ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
 # environment
@@ -191,14 +191,13 @@ SHLVL = 0
 # environment
 GNOME_SHELL_SESSION_MODE = ubuntu
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-02f14e4d-97e0-4776-a629-8568c73f46c5.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-2776a595-aa7f-4c73-81e6-733766ce9da2.sock
 # default
 MAKE_VERSION := 4.2.1
 # environment
 USER = joao
 # environment
 SNAP_REVISION = 97
- 
 # makefile
 .DEFAULT_GOAL := all
 # makefile (from 'Makefile', line 8)
@@ -270,7 +269,7 @@ OBJECTS := ./build/objects/src/DFS.o ./build/objects/src/main.o
 # environment
 LANG = C
 # environment
-VSCODE_PID = 5085
+VSCODE_PID = 2529
 # makefile (from 'Makefile', line 6)
 APP_DIR := ./build/
 # variable set hash-table stats:
@@ -282,15 +281,16 @@ APP_DIR := ./build/
 
 # Directories
 
-# . (device 66309, inode 1444379): 11 files, no impossibilities.
+# . (device 66309, inode 1444379): 10 files, no impossibilities.
 # src (device 66309, inode 1444385): 5 files, no impossibilities.
 
-# 16 files, no impossibilities in 2 directories.
+# 15 files, no impossibilities in 2 directories.
 
 # Implicit Rules
 
 build/objects/%.o: %.cpp
 #  recipe to execute (from 'Makefile', line 16):
+ 
 	@mkdir -p $(@D)
 	$(CXX) $(CXXFLAGS) $(INCLUDE) -o $@ -c $<
 
@@ -426,12 +426,12 @@ build/objects/src/main.o:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 29 / storage = 270 B / avg = 9 B
-# current buf: size = 8162 B / used = 270 B / count = 29 / avg = 9 B
+# strcache buffers: 1 (0) / strings = 28 / storage = 262 B / avg = 9 B
+# current buf: size = 8162 B / used = 262 B / count = 28 / avg = 9 B
 
-# strcache performance: lookups = 59 / hit rate = 50%
+# strcache performance: lookups = 58 / hit rate = 51%
 # hash-table stats:
-# Load=29/8192=0%, Rehash=0, Collisions=2/59=3%
-# Finished Make data base on Sat May 28 17:29:06 2022
+# Load=28/8192=0%, Rehash=0, Collisions=2/58=3%
+# Finished Make data base on Sun May 29 19:07:07 2022
 
  

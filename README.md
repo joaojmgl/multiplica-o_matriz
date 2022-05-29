@@ -6,12 +6,12 @@
 
 # Proposta apresentada:
  1. Foi pedido:
-   1.1 A criação de um arquivo contendo:
+   - 1.1 A criação de um arquivo contendo:
       - O tamanho de uma matriz quadrada. 
       - posiçoes das paredes.
       - Tipo de busca, neste caso o DFS.
-   1.1 O jogo deveria terminar apos o alvo ser atingido.
-   1.3 Tambem foi necessario imprimir o caminho feito pelo algoritmo na matriz, mostrando:
+   - 1.1 O jogo deveria terminar apos o alvo ser atingido.
+   - 1.3 Tambem foi necessario imprimir o caminho feito pelo algoritmo na matriz, mostrando:
       - Barreiras.
       - Lugares onde foi relizado`ṔOP`.
       - Posiçoes onde foram relizados`PUSH`.
