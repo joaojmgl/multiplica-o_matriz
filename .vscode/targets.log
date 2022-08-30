@@ -6,7 +6,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Sun May 29 19:07:07 2022
+# Make data base, printed on Tue Aug 30 16:36:01 2022
 
 # Variables
 
@@ -23,13 +23,11 @@ DESKTOP_SESSION = ubuntu
 # environment
 XDG_SESSION_CLASS = user
 # makefile (from 'Makefile', line 9)
-SRC := src/DFS.cpp src/main.cpp
+SRC := src/matriz_nova.cpp src/main.cpp
 # environment
 SNAP_COMMON = /var/snap/code/common
 # environment
 XDG_SESSION_TYPE = x11
-# environment
-VSCODE_LOG_NATIVE = false
 # makefile (from 'Makefile', line 7)
 TARGET := app
 # automatic
@@ -45,15 +43,15 @@ GDMSESSION = ubuntu
 # environment
 XMODIFIERS = @im=ibus
 # makefile
-CURDIR := /home/joao/Documentos/linear_stack-main
+CURDIR := /home/joao/Documentos/matriz_nova
 # makefile
 SHELL = /bin/sh
 # environment
-SNAP_DATA = /var/snap/code/97
+SNAP_DATA = /var/snap/code/105
 # environment
-VSCODE_NLS_CONFIG = {"locale":"pt-br","availableLanguages":{"*":"pt-br"},"_languagePackId":"74ce6549a467d1dfaba55fb5394742c9.pt-br","_translationsConfigFile":"/home/joao/.config/Code/clp/74ce6549a467d1dfaba55fb5394742c9.pt-br/tcf.json","_cacheRoot":"/home/joao/.config/Code/clp/74ce6549a467d1dfaba55fb5394742c9.pt-br","_resolvedLanguagePackCoreLocation":"/home/joao/.config/Code/clp/74ce6549a467d1dfaba55fb5394742c9.pt-br/c3511e6c69bb39013c4a4b7b9566ec1ca73fc4d5","_corruptedFile":"/home/joao/.config/Code/clp/74ce6549a467d1dfaba55fb5394742c9.pt-br/corrupted.info","_languagePackSupport":true}
+VSCODE_NLS_CONFIG = {"locale":"pt-br","availableLanguages":{"*":"pt-br"},"_languagePackId":"8e7a008e83c664b9876a8f72ff0490ae.pt-br","_translationsConfigFile":"/home/joao/.config/Code/clp/8e7a008e83c664b9876a8f72ff0490ae.pt-br/tcf.json","_cacheRoot":"/home/joao/.config/Code/clp/8e7a008e83c664b9876a8f72ff0490ae.pt-br","_resolvedLanguagePackCoreLocation":"/home/joao/.config/Code/clp/8e7a008e83c664b9876a8f72ff0490ae.pt-br/e4503b30fc78200f846c62cf8091b76ff5547662","_corruptedFile":"/home/joao/.config/Code/clp/8e7a008e83c664b9876a8f72ff0490ae.pt-br/corrupted.info","_languagePackSupport":true}
 # environment
-JOURNAL_STREAM = 8:46730
+JOURNAL_STREAM = 8:51335
 # environment
 XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
 # environment
@@ -77,9 +75,7 @@ XDG_DATA_DIRS = /usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/d
 # environment
 DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
 # environment
-VSCODE_VERBOSE_LOGGING = true
-# environment
-_ = /snap/code/97/usr/share/code/code
+_ = /snap/code/105/usr/share/code/code
 # environment
 MANAGERPID = 1482
 # environment
@@ -87,37 +83,35 @@ LESSOPEN = | /usr/bin/lesspipe %s
 # environment
 VSCODE_CWD = /home/joao
 # environment
-GSETTINGS_SCHEMA_DIR = /snap/code/97/usr/share/glib-2.0/schemas
+GSETTINGS_SCHEMA_DIR = /snap/code/105/usr/share/glib-2.0/schemas
 # default
 MAKE_HOST := x86_64-pc-linux-gnu
 # environment
-PATH = /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+PATH = /home/joao/.cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
 # environment
 GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
 # environment
-SESSION_MANAGER = local/Joao-Lisboa-Note:@/tmp/.ICE-unix/1701,unix/Joao-Lisboa-Note:/tmp/.ICE-unix/1701
+SESSION_MANAGER = local/Joao-Lisboa-Note:@/tmp/.ICE-unix/1698,unix/Joao-Lisboa-Note:/tmp/.ICE-unix/1698
 # environment
 XDG_RUNTIME_DIR = /run/user/1000
 # environment
 GDK_PIXBUF_MODULE_FILE = /home/joao/snap/code/common/.cache/gdk-pixbuf-loaders.cache
 # environment
-SNAP = /snap/code/97
+SNAP = /snap/code/105
 # environment
-SNAP_VERSION = c3511e6c
+SNAP_VERSION = e4503b30
 # environment
 XDG_MENU_PREFIX = gnome-
-# environment
-VSCODE_LOG_STACK = false
 # environment
 DISABLE_WAYLAND = 1
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
-INVOCATION_ID = 05fec71d11724ddb9a86dae66b2d12e8
+INVOCATION_ID = 200932e4cbd14b329549b9fd1ae9fd94
 # makefile (from 'Makefile', line 3)
 LDFLAGS := -lstdc++ -lm
 # environment
-GDK_PIXBUF_MODULEDIR = /snap/code/97/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders
+GDK_PIXBUF_MODULEDIR = /snap/code/105/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
@@ -127,21 +121,19 @@ XDG_SESSION_DESKTOP = ubuntu
 # environment
 SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 2313
+GIO_LAUNCHED_DESKTOP_FILE_PID = 10694
 # automatic
 %F = $(notdir $%)
 # environment
 DISPLAY = :0
 # environment
-VSCODE_PIPE_LOGGING = true
-# environment
 SNAP_INSTANCE_KEY = 
 # environment
-PWD = /home/joao/Documentos/linear_stack-main
+PWD = /home/joao/Documentos/matriz_nova
 # default
 .LOADED := 
 # environment
-SSH_AGENT_PID = 1662
+SSH_AGENT_PID = 1660
 # environment
 ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
 # environment
@@ -155,7 +147,7 @@ LESSCLOSE = /usr/bin/lesspipe %s %s
 # environment
 VSCODE_CLI = 1
 # environment
-VSCODE_CODE_CACHE_PATH = /home/joao/.config/Code/CachedData/c3511e6c69bb39013c4a4b7b9566ec1ca73fc4d5
+VSCODE_CODE_CACHE_PATH = /home/joao/.config/Code/CachedData/e4503b30fc78200f846c62cf8091b76ff5547662
 # environment
 LOGNAME = joao
 # environment
@@ -185,19 +177,17 @@ MAKECMDGOALS := all
 # environment
 QT_IM_MODULE = ibus
 # environment
-SNAP_USER_DATA = /home/joao/snap/code/97
+SNAP_USER_DATA = /home/joao/snap/code/105
 # environment
 SHLVL = 0
 # environment
 GNOME_SHELL_SESSION_MODE = ubuntu
-# environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-2776a595-aa7f-4c73-81e6-733766ce9da2.sock
 # default
 MAKE_VERSION := 4.2.1
 # environment
 USER = joao
 # environment
-SNAP_REVISION = 97
+SNAP_REVISION = 105
 # makefile
 .DEFAULT_GOAL := all
 # makefile (from 'Makefile', line 8)
@@ -215,7 +205,7 @@ MAKE_COMMAND := make
 # environment
 LANGUAGE = pt_BR:pt:en
 # environment
-VSCODE_IPC_HOOK = /run/user/1000/vscode-a2d5acab-1.67.2-main.sock
+VSCODE_IPC_HOOK = /run/user/1000/vscode-a2d5acab-1.70.2-main.sock
 # environment
 BAMF_DESKTOP_FILE_HINT = /var/lib/snapd/desktop/applications/code_code.desktop
 # makefile
@@ -265,15 +255,15 @@ GJS_DEBUG_OUTPUT = stderr
 # default
 .RECIPEPREFIX := 
 # makefile (from 'Makefile', line 11)
-OBJECTS := ./build/objects/src/DFS.o ./build/objects/src/main.o
+OBJECTS := ./build/objects/src/matriz_nova.o ./build/objects/src/main.o
 # environment
 LANG = C
 # environment
-VSCODE_PID = 2529
+VSCODE_PID = 10751
 # makefile (from 'Makefile', line 6)
 APP_DIR := ./build/
 # variable set hash-table stats:
-# Load=131/1024=13%, Rehash=0, Collisions=19/173=11%
+# Load=126/1024=12%, Rehash=0, Collisions=18/168=11%
 
 # Pattern-specific Variable Values
 
@@ -281,16 +271,16 @@ APP_DIR := ./build/
 
 # Directories
 
-# . (device 66309, inode 1444379): 10 files, no impossibilities.
-# src (device 66309, inode 1444385): 5 files, no impossibilities.
+# . (device 66309, inode 1836754): 8 files, no impossibilities.
+# src (device 66309, inode 1856552): 5 files, no impossibilities.
 
-# 15 files, no impossibilities in 2 directories.
+# 13 files, no impossibilities in 2 directories.
 
 # Implicit Rules
 
+ 
 build/objects/%.o: %.cpp
 #  recipe to execute (from 'Makefile', line 16):
- 
 	@mkdir -p $(@D)
 	$(CXX) $(CXXFLAGS) $(INCLUDE) -o $@ -c $<
 
@@ -322,7 +312,7 @@ all: build build//app
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-05-17 14:04:19.608842952
+#  Last modified 2022-05-17 14:04:19.608842
 #  File has been updated.
 #  Successfully updated.
 
@@ -366,10 +356,20 @@ build:
 	@mkdir -p $(OBJ_DIR)
 
 # Not a target:
-build/objects/src/DFS.o:
+build/objects/src/matriz_nova.o:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
+
+# makefile (from 'Makefile', line 32)
+release: CXXFLAGS += -O3
+release: all
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+# variable set hash-table stats:
+# Load=1/32=3%, Rehash=0, Collisions=0/2=0%
 
 # Not a target:
 .DEFAULT:
@@ -377,7 +377,7 @@ build/objects/src/DFS.o:
 #  Modification time never checked.
 #  File has not been updated.
 
-build//app: build/objects/src/DFS.o build/objects/src/main.o
+build//app: build/objects/src/matriz_nova.o build/objects/src/main.o
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
@@ -402,16 +402,6 @@ clean:
 	-@rm -rvf $(OBJ_DIR)/*
 	-@rm -rvf $(APP_DIR)/*
 
-# makefile (from 'Makefile', line 32)
-release: CXXFLAGS += -O3
-release: all
-#  Phony target (prerequisite of .PHONY).
-#  Implicit rule search has not been done.
-#  File does not exist.
-#  File has not been updated.
-# variable set hash-table stats:
-# Load=1/32=3%, Rehash=0, Collisions=0/2=0%
-
 # Not a target:
 build/objects/src/main.o:
 #  Implicit rule search has not been done.
@@ -419,19 +409,19 @@ build/objects/src/main.o:
 #  File has not been updated.
 
 # files hash-table stats:
-# Load=13/1024=1%, Rehash=0, Collisions=4/45=9%
+# Load=13/1024=1%, Rehash=0, Collisions=0/45=0%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 28 / storage = 262 B / avg = 9 B
-# current buf: size = 8162 B / used = 262 B / count = 28 / avg = 9 B
+# strcache buffers: 1 (0) / strings = 26 / storage = 267 B / avg = 10 B
+# current buf: size = 8162 B / used = 267 B / count = 26 / avg = 10 B
 
-# strcache performance: lookups = 58 / hit rate = 51%
+# strcache performance: lookups = 56 / hit rate = 53%
 # hash-table stats:
-# Load=28/8192=0%, Rehash=0, Collisions=2/58=3%
-# Finished Make data base on Sun May 29 19:07:07 2022
+# Load=26/8192=0%, Rehash=0, Collisions=2/56=4%
+# Finished Make data base on Tue Aug 30 16:36:01 2022
 
  

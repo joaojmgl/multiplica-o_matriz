@@ -1,12 +1,11 @@
-#include "DFS.hpp"
-Pilha p;
-Item_1 d;
+#include "matriz_nova.hpp"
+Lista l,L;
+Item d;
 int main()
 {
 
-Matriz_arq(d);
-Anda_labirinto();
-   
+nova_matriz(&l);
+Coordenadas(&L);
 	
 
 		
@@ -14,3 +13,4 @@ Anda_labirinto();
 
 	return 0;
 }
+
