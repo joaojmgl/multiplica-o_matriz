@@ -38,20 +38,50 @@ if (arq_coord.is_open()){
 
 	}
 }
-LImprime(L);
+// LImprime(L);
 }
 
 
-void nova_matriz(Lista *l)
+void nova_matriz(Lista *l, Lista *L)
 	{
 FLVazia(l);
 bool L1= true; 
+bool J1 = false;
+bool I1 = true;
+bool J2 = false;
+bool I2 = false;
 string n,m,z;
 int line_couter = 0;
 Item aux;
 ifstream arq;
 int space_couter = 0;
 arq.open("Matriz.txt");
+for(int i=L->first; i<L->last;){
+	if(I1 == true){
+		aux.i1 = L->vet[i].val;
+		i++;
+		J1=true;
+	
+	} if (J1 == true)
+	{
+	aux.j1 = L->vet[i].val;
+		i++;
+		I2 = true;
+	} if (I2 == true)
+	{
+	aux.i2 = L->vet[i].val;
+		i++;
+		J2 = true;
+	} if (J2 == true)
+	{
+	aux.j2 = L->vet[i].val;
+		i++;
+		I2 = true;
+	} if (I2 == true){
+		J1=false;
+		I2=false;
+		J2=false;
+	}
 	if (arq.is_open())
 		{
 		while(!arq.eof())
@@ -60,14 +90,14 @@ arq.open("Matriz.txt");
 				getline(arq, n);
 				line_couter++;		
 			}
-			if (line_couter>=2&&line_couter<=4){//maximo e minimo do i 
+			if (line_couter>=aux.i1&&line_couter<=aux.i2){//maximo e minimo do i 
 				L1=false;
 				m = arq.get();
 				if (m == " "){ 
 				space_couter++;	
 				}
 				if (m != " "){   
-					if (space_couter>=2&&space_couter<=4){//minimo e maximo de j 
+					if (space_couter>=aux.j1&&space_couter<=aux.j2){//minimo e maximo de j 
 						z+=m;
 					}
 				}else{
@@ -85,7 +115,7 @@ arq.open("Matriz.txt");
  		}
 	}
 LImprime(l);
-
+}
 }
 
 

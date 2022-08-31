@@ -3,9 +3,9 @@ Lista l,L;
 Item d;
 int main()
 {
-
-nova_matriz(&l);
 Coordenadas(&L);
+nova_matriz(&l,&L);
+
 	
 
 		

@@ -22,7 +22,7 @@ typedef struct Lista{
 	
 }Lista;
 
-void nova_matriz(Lista *l);
+void nova_matriz(Lista *l,Lista *L);
 void FLVazia(Lista *l);
 void LInsert(Lista *l, Item d);
 void LImprime(Lista *l);

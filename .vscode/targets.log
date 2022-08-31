@@ -6,7 +6,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Tue Aug 30 16:36:01 2022
+# Make data base, printed on Wed Aug 31 19:05:04 2022
 
 # Variables
 
@@ -51,7 +51,7 @@ SNAP_DATA = /var/snap/code/105
 # environment
 VSCODE_NLS_CONFIG = {"locale":"pt-br","availableLanguages":{"*":"pt-br"},"_languagePackId":"8e7a008e83c664b9876a8f72ff0490ae.pt-br","_translationsConfigFile":"/home/joao/.config/Code/clp/8e7a008e83c664b9876a8f72ff0490ae.pt-br/tcf.json","_cacheRoot":"/home/joao/.config/Code/clp/8e7a008e83c664b9876a8f72ff0490ae.pt-br","_resolvedLanguagePackCoreLocation":"/home/joao/.config/Code/clp/8e7a008e83c664b9876a8f72ff0490ae.pt-br/e4503b30fc78200f846c62cf8091b76ff5547662","_corruptedFile":"/home/joao/.config/Code/clp/8e7a008e83c664b9876a8f72ff0490ae.pt-br/corrupted.info","_languagePackSupport":true}
 # environment
-JOURNAL_STREAM = 8:51335
+JOURNAL_STREAM = 8:53308
 # environment
 XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
 # environment
@@ -77,7 +77,7 @@ DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
 # environment
 _ = /snap/code/105/usr/share/code/code
 # environment
-MANAGERPID = 1482
+MANAGERPID = 1545
 # environment
 LESSOPEN = | /usr/bin/lesspipe %s
 # environment
@@ -91,7 +91,7 @@ PATH = /home/joao/.cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/
 # environment
 GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
 # environment
-SESSION_MANAGER = local/Joao-Lisboa-Note:@/tmp/.ICE-unix/1698,unix/Joao-Lisboa-Note:/tmp/.ICE-unix/1698
+SESSION_MANAGER = local/Joao-Lisboa-Note:@/tmp/.ICE-unix/1763,unix/Joao-Lisboa-Note:/tmp/.ICE-unix/1763
 # environment
 XDG_RUNTIME_DIR = /run/user/1000
 # environment
@@ -107,7 +107,7 @@ DISABLE_WAYLAND = 1
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
-INVOCATION_ID = 200932e4cbd14b329549b9fd1ae9fd94
+INVOCATION_ID = a6d728383db64d49bb6eeeccd1d71cb5
 # makefile (from 'Makefile', line 3)
 LDFLAGS := -lstdc++ -lm
 # environment
@@ -121,7 +121,7 @@ XDG_SESSION_DESKTOP = ubuntu
 # environment
 SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 10694
+GIO_LAUNCHED_DESKTOP_FILE_PID = 2399
 # automatic
 %F = $(notdir $%)
 # environment
@@ -133,7 +133,7 @@ PWD = /home/joao/Documentos/matriz_nova
 # default
 .LOADED := 
 # environment
-SSH_AGENT_PID = 1660
+SSH_AGENT_PID = 1725
 # environment
 ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
 # environment
@@ -259,7 +259,7 @@ OBJECTS := ./build/objects/src/matriz_nova.o ./build/objects/src/main.o
 # environment
 LANG = C
 # environment
-VSCODE_PID = 10751
+VSCODE_PID = 2447
 # makefile (from 'Makefile', line 6)
 APP_DIR := ./build/
 # variable set hash-table stats:
@@ -271,10 +271,10 @@ APP_DIR := ./build/
 
 # Directories
 
-# . (device 66309, inode 1836754): 8 files, no impossibilities.
+# . (device 66309, inode 1836754): 9 files, no impossibilities.
 # src (device 66309, inode 1856552): 5 files, no impossibilities.
 
-# 13 files, no impossibilities in 2 directories.
+# 14 files, no impossibilities in 2 directories.
 
 # Implicit Rules
 
@@ -416,12 +416,12 @@ build/objects/src/main.o:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 26 / storage = 267 B / avg = 10 B
-# current buf: size = 8162 B / used = 267 B / count = 26 / avg = 10 B
+# strcache buffers: 1 (0) / strings = 27 / storage = 283 B / avg = 10 B
+# current buf: size = 8162 B / used = 283 B / count = 27 / avg = 10 B
 
-# strcache performance: lookups = 56 / hit rate = 53%
+# strcache performance: lookups = 57 / hit rate = 52%
 # hash-table stats:
-# Load=26/8192=0%, Rehash=0, Collisions=2/56=4%
-# Finished Make data base on Tue Aug 30 16:36:01 2022
+# Load=27/8192=0%, Rehash=0, Collisions=2/57=4%
+# Finished Make data base on Wed Aug 31 19:05:04 2022
 
  
