@@ -19,10 +19,11 @@ void LInsert(Lista *l, Item d){
 
 void LImprime(Lista *l){
 	for(int i=l->first; i<l->last; i++){
-		cout << l->vet[i].val << endl ;
-	    
+		cout << l->vet[i].val<<endl;
+
 	}
 }
+
 
 void Coordenadas(Lista *L){
 string n;
@@ -32,56 +33,42 @@ FLVazia(L);
 arq_coord.open("coordenadas.txt");
 if (arq_coord.is_open()){
 	while(!arq_coord.eof()){
-		getline(arq_coord,n,',');
-		aux.val = stoi(n);
-		LInsert(L, aux);
+		n=arq_coord.get();
+     if(n=="1"||n=="2"||n=="3"||n=="4"||n=="5"||n=="6"||n=="7"||n=="8"||n=="9"||n=="0"){
+			aux.val = stoi(n);
+			LInsert(L, aux);
+			}
+		
 
 	}
+
 }
-// LImprime(L);
 }
 
 
 void nova_matriz(Lista *l, Lista *L)
 	{
+		
+
 FLVazia(l);
 bool L1= true; 
-bool J1 = false;
-bool I1 = true;
-bool J2 = false;
-bool I2 = false;
+int i1,j1,i2,j2;
 string n,m,z;
 int line_couter = 0;
 Item aux;
 ifstream arq;
 int space_couter = 0;
-arq.open("Matriz.txt");
+
 for(int i=L->first; i<L->last;){
-	if(I1 == true){
-		aux.i1 = L->vet[i].val;
-		i++;
-		J1=true;
-	
-	} if (J1 == true)
-	{
-	aux.j1 = L->vet[i].val;
-		i++;
-		I2 = true;
-	} if (I2 == true)
-	{
-	aux.i2 = L->vet[i].val;
-		i++;
-		J2 = true;
-	} if (J2 == true)
-	{
-	aux.j2 = L->vet[i].val;
-		i++;
-		I2 = true;
-	} if (I2 == true){
-		J1=false;
-		I2=false;
-		J2=false;
-	}
+	arq.open("Matriz.txt");
+	i1 = L->vet[i].val;
+	i++;
+	j1 = L->vet[i].val;
+	i++;
+	i2 = L->vet[i].val;
+	i++;
+	j2 = L->vet[i].val;
+	i++;
 	if (arq.is_open())
 		{
 		while(!arq.eof())
@@ -90,14 +77,14 @@ for(int i=L->first; i<L->last;){
 				getline(arq, n);
 				line_couter++;		
 			}
-			if (line_couter>=aux.i1&&line_couter<=aux.i2){//maximo e minimo do i 
+			if (line_couter>=i1&&line_couter<=i2){//maximo e minimo do i 
 				L1=false;
 				m = arq.get();
 				if (m == " "){ 
 				space_couter++;	
 				}
 				if (m != " "){   
-					if (space_couter>=aux.j1&&space_couter<=aux.j2){//minimo e maximo de j 
+					if (space_couter>=j1&&space_couter<=j2){//minimo e maximo de j 
 						z+=m;
 					}
 				}else{
@@ -107,15 +94,18 @@ for(int i=L->first; i<L->last;){
 						z = "\0";
 					}
 				}         
-				if(space_couter == 5){   
+				if(space_couter ==j2+1){   
 						L1 = true;
 						space_couter = 0;
 				}  
 			}
  		}
-	}
-LImprime(l);
+	}		
+			arq.close();
+			line_couter = 0 ; 
 }
+
+LImprime(l);
 }
 
 
