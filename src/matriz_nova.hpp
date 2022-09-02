@@ -24,4 +24,5 @@ void FLVazia(Lista *l);
 void LInsert(Lista *l, Item d);
 void LImprime(Lista *l);
 void Coordenadas(Lista *L);
+void Transposta(Lista *l, Lista *L);
 #endif

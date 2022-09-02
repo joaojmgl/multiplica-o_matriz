@@ -105,7 +105,63 @@ for(int i=L->first; i<L->last;){
 			line_couter = 0 ; 
 }
 
-LImprime(l);
+// LImprime(l);
 }
 
 
+void Transposta(Lista *l, Lista *L){ 
+	int Matriz_trasposta[MAX][MAX];
+	int Matriz[MAX][MAX];
+	int Matriz_nova[MAX][MAX];
+	int i1,j1,i2,j2,coluna,linha,total,cont=0;
+	for(int i=L->first; i<L->last;){
+		i1 = L->vet[i].val;
+		i++;
+		j1 = L->vet[i].val;
+		i++;
+		i2 = L->vet[i].val;
+		i++;
+		j2 = L->vet[i].val;
+		i++;
+		i1-=1;
+		j1-=1;
+		linha=i2-i1;
+		coluna=j2-j1;
+		// total=linha*coluna;
+		cout<<"i"<<linha<<endl;
+		cout<<"c"<<coluna<<endl;
+		// cout<<coluna<<endl;
+		for (int j = 0; j != coluna; j++)
+		{	
+			for (int c=0; c != linha; c++)
+			{
+				Matriz_trasposta[c][j]=l->vet[cont].val;
+				Matriz[j][c]=l->vet[cont].val;
+				cont++;
+				Matriz_nova[j][c]=total;
+			
+				
+			}
+			
+		}
+		
+
+		for (int m = 0; m != linha; m++)//linha da nova matriz 
+		{
+			for (int j = 0; j != linha; j++)//linha da matriz normal e coluna da matriz transposta 
+			{
+				for (int c = 0; c != linha; c++)//coluna da matriz normal e linha da matriz trasposta 
+				{
+					total += Matriz[m][c]*Matriz_trasposta[c][j];
+				}
+				Matriz_nova[m][j]=total;
+				total=0;
+				cout<<Matriz_nova[m][j]<<" ";
+			}
+			cout<<endl;
+		}
+		
+	}
+	
+	
+}

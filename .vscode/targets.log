@@ -6,7 +6,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Wed Aug 31 19:05:04 2022
+# Make data base, printed on Fri Sep  2 14:04:45 2022
 
 # Variables
 
@@ -47,11 +47,11 @@ CURDIR := /home/joao/Documentos/matriz_nova
 # makefile
 SHELL = /bin/sh
 # environment
-SNAP_DATA = /var/snap/code/105
+SNAP_DATA = /var/snap/code/106
 # environment
-VSCODE_NLS_CONFIG = {"locale":"pt-br","availableLanguages":{"*":"pt-br"},"_languagePackId":"8e7a008e83c664b9876a8f72ff0490ae.pt-br","_translationsConfigFile":"/home/joao/.config/Code/clp/8e7a008e83c664b9876a8f72ff0490ae.pt-br/tcf.json","_cacheRoot":"/home/joao/.config/Code/clp/8e7a008e83c664b9876a8f72ff0490ae.pt-br","_resolvedLanguagePackCoreLocation":"/home/joao/.config/Code/clp/8e7a008e83c664b9876a8f72ff0490ae.pt-br/e4503b30fc78200f846c62cf8091b76ff5547662","_corruptedFile":"/home/joao/.config/Code/clp/8e7a008e83c664b9876a8f72ff0490ae.pt-br/corrupted.info","_languagePackSupport":true}
+VSCODE_NLS_CONFIG = {"locale":"pt-br","availableLanguages":{"*":"pt-br"},"_languagePackId":"ccd4021879726e819b0e7a745ee05354.pt-br","_translationsConfigFile":"/home/joao/.config/Code/clp/ccd4021879726e819b0e7a745ee05354.pt-br/tcf.json","_cacheRoot":"/home/joao/.config/Code/clp/ccd4021879726e819b0e7a745ee05354.pt-br","_resolvedLanguagePackCoreLocation":"/home/joao/.config/Code/clp/ccd4021879726e819b0e7a745ee05354.pt-br/784b0177c56c607789f9638da7b6bf3230d47a8c","_corruptedFile":"/home/joao/.config/Code/clp/ccd4021879726e819b0e7a745ee05354.pt-br/corrupted.info","_languagePackSupport":true}
 # environment
-JOURNAL_STREAM = 8:53308
+JOURNAL_STREAM = 8:45006
 # environment
 XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
 # environment
@@ -75,15 +75,15 @@ XDG_DATA_DIRS = /usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/d
 # environment
 DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
 # environment
-_ = /snap/code/105/usr/share/code/code
+_ = /snap/code/106/usr/share/code/code
 # environment
-MANAGERPID = 1545
+MANAGERPID = 1497
 # environment
 LESSOPEN = | /usr/bin/lesspipe %s
 # environment
 VSCODE_CWD = /home/joao
 # environment
-GSETTINGS_SCHEMA_DIR = /snap/code/105/usr/share/glib-2.0/schemas
+GSETTINGS_SCHEMA_DIR = /snap/code/106/usr/share/glib-2.0/schemas
 # default
 MAKE_HOST := x86_64-pc-linux-gnu
 # environment
@@ -91,27 +91,25 @@ PATH = /home/joao/.cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/
 # environment
 GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
 # environment
-SESSION_MANAGER = local/Joao-Lisboa-Note:@/tmp/.ICE-unix/1763,unix/Joao-Lisboa-Note:/tmp/.ICE-unix/1763
+SESSION_MANAGER = local/Joao-Lisboa-Note:@/tmp/.ICE-unix/1716,unix/Joao-Lisboa-Note:/tmp/.ICE-unix/1716
 # environment
 XDG_RUNTIME_DIR = /run/user/1000
 # environment
 GDK_PIXBUF_MODULE_FILE = /home/joao/snap/code/common/.cache/gdk-pixbuf-loaders.cache
 # environment
-SNAP = /snap/code/105
+SNAP = /snap/code/106
 # environment
-SNAP_VERSION = e4503b30
+SNAP_VERSION = 784b0177
 # environment
 XDG_MENU_PREFIX = gnome-
 # environment
-DISABLE_WAYLAND = 1
-# environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
-INVOCATION_ID = a6d728383db64d49bb6eeeccd1d71cb5
+INVOCATION_ID = 8146ea40004740aca728f96f7909d714
 # makefile (from 'Makefile', line 3)
 LDFLAGS := -lstdc++ -lm
 # environment
-GDK_PIXBUF_MODULEDIR = /snap/code/105/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders
+GDK_PIXBUF_MODULEDIR = /snap/code/106/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
@@ -121,7 +119,7 @@ XDG_SESSION_DESKTOP = ubuntu
 # environment
 SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 2399
+GIO_LAUNCHED_DESKTOP_FILE_PID = 2347
 # automatic
 %F = $(notdir $%)
 # environment
@@ -133,7 +131,7 @@ PWD = /home/joao/Documentos/matriz_nova
 # default
 .LOADED := 
 # environment
-SSH_AGENT_PID = 1725
+SSH_AGENT_PID = 1678
 # environment
 ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
 # environment
@@ -147,7 +145,7 @@ LESSCLOSE = /usr/bin/lesspipe %s %s
 # environment
 VSCODE_CLI = 1
 # environment
-VSCODE_CODE_CACHE_PATH = /home/joao/.config/Code/CachedData/e4503b30fc78200f846c62cf8091b76ff5547662
+VSCODE_CODE_CACHE_PATH = /home/joao/.config/Code/CachedData/784b0177c56c607789f9638da7b6bf3230d47a8c
 # environment
 LOGNAME = joao
 # environment
@@ -177,7 +175,7 @@ MAKECMDGOALS := all
 # environment
 QT_IM_MODULE = ibus
 # environment
-SNAP_USER_DATA = /home/joao/snap/code/105
+SNAP_USER_DATA = /home/joao/snap/code/106
 # environment
 SHLVL = 0
 # environment
@@ -187,7 +185,7 @@ MAKE_VERSION := 4.2.1
 # environment
 USER = joao
 # environment
-SNAP_REVISION = 105
+SNAP_REVISION = 106
 # makefile
 .DEFAULT_GOAL := all
 # makefile (from 'Makefile', line 8)
@@ -205,7 +203,7 @@ MAKE_COMMAND := make
 # environment
 LANGUAGE = pt_BR:pt:en
 # environment
-VSCODE_IPC_HOOK = /run/user/1000/vscode-a2d5acab-1.70.2-main.sock
+VSCODE_IPC_HOOK = /run/user/1000/vscode-a2d5acab-1.71.0-main.sock
 # environment
 BAMF_DESKTOP_FILE_HINT = /var/lib/snapd/desktop/applications/code_code.desktop
 # makefile
@@ -259,11 +257,11 @@ OBJECTS := ./build/objects/src/matriz_nova.o ./build/objects/src/main.o
 # environment
 LANG = C
 # environment
-VSCODE_PID = 2447
+VSCODE_PID = 2399
 # makefile (from 'Makefile', line 6)
 APP_DIR := ./build/
 # variable set hash-table stats:
-# Load=126/1024=12%, Rehash=0, Collisions=18/168=11%
+# Load=125/1024=12%, Rehash=0, Collisions=18/167=11%
 
 # Pattern-specific Variable Values
 
@@ -278,7 +276,6 @@ APP_DIR := ./build/
 
 # Implicit Rules
 
- 
 build/objects/%.o: %.cpp
 #  recipe to execute (from 'Makefile', line 16):
 	@mkdir -p $(@D)
@@ -288,6 +285,7 @@ build/objects/%.o: %.cpp
 
 # Files
 
+ 
 all: build build//app
 #  Phony target (prerequisite of .PHONY).
 #  Command line target.
@@ -422,6 +420,6 @@ build/objects/src/main.o:
 # strcache performance: lookups = 57 / hit rate = 52%
 # hash-table stats:
 # Load=27/8192=0%, Rehash=0, Collisions=2/57=4%
-# Finished Make data base on Wed Aug 31 19:05:04 2022
+# Finished Make data base on Fri Sep  2 14:04:45 2022
 
  

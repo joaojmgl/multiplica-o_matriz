@@ -5,7 +5,7 @@ int main()
 {
 Coordenadas(&L);
 nova_matriz(&l,&L);
-
+Transposta(&l, &L);
 	
 
 		
