@@ -1,11 +1,13 @@
 #include "matriz_nova.hpp"
-Lista l,L;
+Lista l,L,coord;
 Item d;
+
 int main()
 {
-Coordenadas(&L);
+unordered_map<string,int**>Mat;
+Coordenadas(&L, &coord);
 nova_matriz(&l,&L);
-Transposta(&l, &L);
+Transposta(&l, &L,&Mat,&coord);
 	
 
 		

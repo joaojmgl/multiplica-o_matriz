@@ -6,6 +6,7 @@
 #include <stdbool.h>
 #include <string>
 #include <iostream>
+#include <unordered_map>
 using namespace std;
 #define MAX 100
 typedef struct Item{
@@ -23,6 +24,6 @@ void nova_matriz(Lista *l,Lista *L);
 void FLVazia(Lista *l);
 void LInsert(Lista *l, Item d);
 void LImprime(Lista *l);
-void Coordenadas(Lista *L);
-void Transposta(Lista *l, Lista *L);
+void Coordenadas(Lista *L, Lista *coord);
+void Transposta(Lista *l, Lista *L,unordered_map<string,int**>*Mat,Lista *coord);
 #endif

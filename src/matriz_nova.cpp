@@ -25,7 +25,7 @@ void LImprime(Lista *l){
 }
 
 
-void Coordenadas(Lista *L){
+void Coordenadas(Lista *L, Lista *coord){
 string n;
 ifstream arq_coord;
 Item aux;
@@ -37,6 +37,8 @@ if (arq_coord.is_open()){
      if(n=="1"||n=="2"||n=="3"||n=="4"||n=="5"||n=="6"||n=="7"||n=="8"||n=="9"||n=="0"){
 			aux.val = stoi(n);
 			LInsert(L, aux);
+			aux.vall=n;
+			LInsert(coord, aux);
 			}
 		
 
@@ -69,6 +71,7 @@ for(int i=L->first; i<L->last;){
 	i++;
 	j2 = L->vet[i].val;
 	i++;
+	
 	if (arq.is_open())
 		{
 		while(!arq.eof())
@@ -109,58 +112,100 @@ for(int i=L->first; i<L->last;){
 }
 
 
-void Transposta(Lista *l, Lista *L){ 
-	int Matriz_trasposta[MAX][MAX];
-	int Matriz[MAX][MAX];
-	int Matriz_nova[MAX][MAX];
-	int i1,j1,i2,j2,coluna,linha,total,cont=0;
+void Transposta(Lista *l, Lista *L, unordered_map<string,int**>*Mat,Lista *coord){ 
+	int** Matriz_transposta=0;
+	int** Matriz=0;
+	int** Matriz_nova=0;
+	int i1,j1,i2,j2,coluna,linha,cont=0;
+	int** matrizprint = 0;
+	string key;
+
 	for(int i=L->first; i<L->last;){
 		i1 = L->vet[i].val;
+		key+=coord->vet[i].vall;
 		i++;
 		j1 = L->vet[i].val;
+		key+=coord->vet[i].vall;
 		i++;
 		i2 = L->vet[i].val;
+		key+=coord->vet[i].vall;
 		i++;
 		j2 = L->vet[i].val;
+		key+=coord->vet[i].vall;
 		i++;
 		i1-=1;
 		j1-=1;
 		linha=i2-i1;
 		coluna=j2-j1;
-		// total=linha*coluna;
-		cout<<"i"<<linha<<endl;
-		cout<<"c"<<coluna<<endl;
-		// cout<<coluna<<endl;
-		for (int j = 0; j != coluna; j++)
-		{	
-			for (int c=0; c != linha; c++)
-			{
-				Matriz_trasposta[c][j]=l->vet[cont].val;
-				Matriz[j][c]=l->vet[cont].val;
-				cont++;
-				Matriz_nova[j][c]=total;
-			
-				
-			}
-			
-		}
-		
-
-		for (int m = 0; m != linha; m++)//linha da nova matriz 
-		{
-			for (int j = 0; j != linha; j++)//linha da matriz normal e coluna da matriz transposta 
-			{
-				for (int c = 0; c != linha; c++)//coluna da matriz normal e linha da matriz trasposta 
+		auto search = Mat->find(key);
+		if (search == Mat->end()) {
+			Matriz=new int*[linha];
+			cout<<"Matriz original :"<<endl;
+			for (int j = 0; j != coluna; j++)
+			{	
+				Matriz[j]=new int[coluna];
+				for (int c=0; c != linha; c++)
 				{
-					total += Matriz[m][c]*Matriz_trasposta[c][j];
+					
+					Matriz[j][c]=l->vet[cont].val;
+					cont++;
+					cout<<Matriz[j][c]<<" ";
+					
 				}
-				Matriz_nova[m][j]=total;
-				total=0;
-				cout<<Matriz_nova[m][j]<<" ";
+				cout<<endl;
 			}
-			cout<<endl;
+
+			Matriz_transposta = new int*[coluna];
+			cout<<"Matriz transposta :"<<endl;
+			for (int j = 0; j < coluna; j++) {
+				Matriz_transposta[j] = new int[linha];
+				for (int c = 0; c < linha; c++) {
+					Matriz_transposta[j][c] = Matriz[c][j];
+					cout<<Matriz_transposta[j][c]<<" ";
+				}
+				cout<<endl;
+			}
+
+			Matriz_nova = new int*[linha];
+			int soma=0;
+			cout<<"Matriz multiplicada :"<<endl;
+			for (int m = 0; m < linha; m++)
+			{
+				Matriz_nova[m]=new int[linha];
+				for (int j  = 0; j < linha; j++)
+				{
+					soma=0;
+					for (int c = 0; c < coluna; c++)
+					{
+						soma+=(Matriz[m][c]*Matriz_transposta[c][j]);
+					}
+					Matriz_nova[m][j]=soma;
+					
+					cout<<Matriz_nova[m][j]<<" ";
+				}
+				cout<<endl;
+			}
+			Mat->emplace(key,Matriz_nova);
+		}else{
+			cout<<"Estas cordenadas ja foram inseridas no sistema:"<<key<<endl;
+			for (auto item: *Mat) 
+			{
+				if (item.first == key) 
+				 {
+				matrizprint = item.second;
+				}
+			}
+			for (int j = 0; j < linha; j++) 
+			{
+				for (int c = 0; c < coluna; c++) 
+				{  
+					cout << matrizprint[j][c] << " ";
+				}
+				cout << endl;
+		 	}
 		}
-		
+
+		key.erase();	
 	}
 	
 	
